@@ -28,6 +28,6 @@ button.addEventListener("click", function(event){
         }
     }
     if(ch == false){
-        message.classList.add("error")
+        message.classList.add("error");
     }
 })

@@ -25,8 +25,8 @@ button.addEventListener("click", function(event){
             for(i = 0; i < allaccount.length; i++){
                 a = allaccount[i]
                 if (a.email == usname) {
-                    message2.classList.add("error")
-                    ch = false
+                    message2.classList.add("error");
+                    ch = false;
                 }
             }
             if(ch == true){

@@ -16,7 +16,7 @@ button.addEventListener("click", function(event){
             if (chec.email == usname.value){
                 ch = true
                 if(chec.password == pass.value){
-                    window.location = `./index.html`
+                    window.location = `../main.html`
                 }
                 else{
                     message.classList.add("error")

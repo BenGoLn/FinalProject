@@ -35,6 +35,7 @@ button.addEventListener("click", function(event){
                     email: usname,
                     password: pass
                 })
+                window.location = "../page/main.html"
             }
         }
         sub = JSON.stringify(allaccount)

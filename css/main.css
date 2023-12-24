@@ -1,3 +1,336 @@
+* {
+    font-family: "Lato";
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+#sign_in {
+    flex: 1;
+}
+
+#sign_in a {
+    float: right;
+}
+
+#button {
+    display: inline-block;
+    background-color: #d8d5d5;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #bfbbbb;
+    text-align: center;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #9f9c9c;
+}
+
+#button:active {
+    background-color: #9f9e9e;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+p {
+    font-weight: 400;
+    color: #777;
+    line-height: 1.8;
+}
 body{
+    margin: 0;
+}
+.linktext{
+    float: left;
+    width: auto;
+}
+.linktext:hover{
+    color: #000;
+    background-color: #ccc;
+}
+.linksearch{
+    float: right;
+}
+.linksearch:hover{
+    color: white;
+    background-color: red;
+}
+.background {
+    background-color: white;
+    transition: background-color 0.5s;
+    color: black;
+}
+#home{
+    position: relative;
+    background: url(https://www.w3schools.com/w3images/parallax1.jpg);
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+}
+.slide-content{
+    position: absolute;
+    top: 50%;
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    left: 50%;
+    letter-spacing: 10px;
+    font-size: 24px;
+    transform: translate(-50%,-50%);
+}
+#about{
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: auto;
+    line-height: 1.8;
+}
+.aboutme{
+    font-size: 23px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.des, #name{
+    width: 50%;
+    height: 100%;
+}
+#opacity{
+    opacity: 0.6;
+}
+#opacity:hover{
+    opacity: 1;
+}
+.center{
+    text-align: center;
+    font-weight: 400;
+    color: #777;
+    line-height: 1.8;
+}
+.text{
+    letter-spacing: 10px;
+}
+.stats{
+    background-color: #ccc;
+    padding: 2px;
+}
+#cando{
+    margin: 10px;
+}
+.percent{
+    text-align: center;
+    padding: 7px;
+    background-color: #616161;
+    color: #fff;
+}
+.do{
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #616161;
+    color: #fff;
+    max-width: 980px;
+}
+.row_item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 25%;
+    float: left;
+}
+.large{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+#porfolio{
+    /* position: relative; */
+    background: url(https://www.w3schools.com/w3images/parallax2.jpg);
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;   
+    background-position: center;
+    opacity: 0.8;
+}
+.porfolio_content{
+    /* position: absolute; */
+    top: 50%;
+    color: white;
+    padding: 12px 24px;
+    left: 50%;
+    letter-spacing: 10px;
+    font-size: 36px;
+    transform: translate(-50%,-50%);}
+.image{
+    width: 25%;
+    float: left;
+    padding: 0 8px;
+}
+.image img{
+    width: 100%;
+    opacity: 1;
+}
+.image img:hover{
+    opacity: 0.6;
+}
+.v{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+.load{
+    text-align: center;
+}
+.load button{
+    color: #000;
+    background-color: #f1f1f1;
+    margin-top: 64px;
+    text-align: center;
+    padding: 12px 24px;
+    border: none;
+}
+#contact{
+    position: relative;
+    background: url(https://www.w3schools.com/w3images/parallax3.jpg);
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;   
+    background-position: center;
+    opacity: 0.8;
+    margin-top: 75px;
+}
+.contact_content{
+    position: absolute;
+    top: 50%;
+    color: white;
+    padding: 12px 24px;
+    left: 50%;
+    letter-spacing: 10px;
+    font-size: 36px;
+    transform: translate(-50%,-50%);
+}
+.contactaddress{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 16px 32px;
+    display: flex;
+}
+.map{
+    width: 33.33333%;
+    margin-right: 30px;
+}
+.map img{
+    border-radius: 4px;
+}
+.position{
+    display: flex;
+    flex-direction: column;
+    color: #777;
+}
+.position div{
+    margin-bottom: 10px
+}
+.a{
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+div.half {
+    width: calc(33.33%);
+    margin-right: 20px; 
+    display: inline-block; 
     box-sizing: border-box;
+}
+
+
+input[name="message"] {
+    width: calc(66.67%); 
+    margin-right: 20px; 
+    box-sizing: border-box; 
+
+}
+form {
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+
+input[type="name"],
+input[type="email"],
+input[name="message"] {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px; 
+    background-color: #fff; 
+    transition: border-color 0.2s;
+}
+
+
+input[type="name"]:focus,
+input[type="email"]:focus,
+input[name="message"]:focus {
+    border-color: #007bff; 
+    outline: none;
+}
+.submit{
+    float: right;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+.fa-paper-plane{
+    margin-right: 5px;
 }

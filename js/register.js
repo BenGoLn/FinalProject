@@ -35,6 +35,8 @@ button.addEventListener("click", function(event){
                     email: usname,
                     password: pass
                 })
+                localStorage.setItem("username", usname.value)
+                localStorage.setItem("signin", "yes")
                 window.location = "../page/main.html"
             }
         }

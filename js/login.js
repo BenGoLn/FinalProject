@@ -16,7 +16,9 @@ button.addEventListener("click", function(event){
             if (chec.email == usname.value){
                 ch = true
                 if(chec.password == pass.value){
-                    window.location = `../main.html`
+                    localStorage.setItem("username", usname.value)
+                    localStorage.setItem("signin", "yes")
+                    window.location = `../page/main.html`
                 }
                 else{
                     message.classList.add("error")

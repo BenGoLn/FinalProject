@@ -35,12 +35,12 @@ button.addEventListener("click", function(event){
                     email: usname,
                     password: pass
                 })
-                localStorage.setItem("username", usname.value)
+                localStorage.setItem("username", usname)
                 localStorage.setItem("signin", "yes")
                 window.location = "../page/main.html"
             }
         }
-        sub = JSON.stringify(allaccount)
+        sub = JSON.stringify(allaccount);
         localStorage.setItem("allstorage", sub)
     }
 })

@@ -1,0 +1,88 @@
+#about{
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: auto;
+    line-height: 1.8
+}
+.navbar{
+    top: 0;
+    left: 0;
+}
+.aboutme{
+    font-size: 23px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.des, #name{
+    width: 50%;
+    height: 100%;
+}
+#opacity{
+    opacity: 0.6;
+}
+#opacity:hover{
+    opacity: 1;
+}
+.center{
+    text-align: center;
+    font-weight: 400;
+    color: #777;
+    line-height: 1.8;
+}
+.text{
+    letter-spacing: 10px;
+}
+.stats{
+    background-color: #ccc;
+    padding: 2px;
+}
+#cando{
+    margin: 10px;
+}
+.percent{
+    text-align: center;
+    padding: 7px;
+    background-color: #616161;
+    color: #fff;
+}
+.do{
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #616161;
+    color: #fff;
+    width: 100%;
+}
+.row_item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 25%;
+    float: left;
+}
+.large{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.image{
+    width: 25%;
+    float: left;
+    padding: 0 8px;
+}
+.image img{
+    width: 100%;
+    opacity: 1;
+}
+.image img:hover{
+    opacity: 0.6;
+}
+.v{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+}

@@ -8,7 +8,7 @@ button.addEventListener("click", function(event){
     var acc = localStorage.getItem("allstorage")
     var allaccount = JSON.parse(acc)
     if(allaccount == null){
-        message.classList.add("error")
+        message.classList.add("error");
     }
     else{
         for(i = 0; i < allaccount.length; i ++){

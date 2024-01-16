@@ -105,9 +105,8 @@ for (let item of products.data) {
     let container = document.createElement("div")
     container.classList.add("container")
 
-    let productname = document.createElement("a");
+    let productname = document.createElement("h5");
     productname.classList.add("product-name");
-    productname.href = "detail.html";
     
     productname.innerText = item.name.toUpperCase();
     container.appendChild(productname);
@@ -138,9 +137,12 @@ for (let item of products.data){
     }
     if(n == true){
         product.push({
+            id: item.id,
             name: item.name,
             price: item.price, 
-            images: item.image
+            images: item.image,
+            fullname: item.fullname,
+            detail: item.detail
         })
     }
     localStorage.setItem("product", JSON.stringify(product))

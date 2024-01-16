@@ -3,39 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sản phẩm</title>
+    <title>Details</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/product.css">
-    <link rel="stylesheet" href="../css/totop.css">
+    <style>
+        .navbar{
+            margin-top: 25px;
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar">
         <div>
             <a href="main.html">TRANG CHỦ</a>
             <a href="aboutme.html"><i class="fa fa-user"></i>VỀ TÔI</a>
-            <a href="#"><i class="fa fa-th"></i>SẢN PHẨM</a>
+            <a href="product.html"><i class="fa fa-th"></i>SẢN PHẨM</a>
             <a href="cart.html"><i class="fa fa-envelope"></i> GIỎ HÀNG</a>
         </div>
         <div id="sign_in">
             <a id="noyes" href="login.html"></a>
         </div>
     </div>
-    <h1>Tất cả sản phẩm</h1>
-    <div id="products">
-        
-    </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Đầu</button>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-<script>
-  function addDarkmodeWidget() {
-    new Darkmode().showWidget();
-  }
-  window.addEventListener('load', addDarkmodeWidget);
-</script>
-<script src="../js/totop.js"></script>
-<script src="../js/product.js"></script>
-<script src="../js/nav.js"></script>
+<script src="../js/detail.js"></script>
 </html>

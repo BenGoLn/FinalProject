@@ -116,10 +116,10 @@ for (let item of products.data) {
     container.appendChild(price);
 
     let btn = document.createElement("button")
-    btn.setAttribute("onclick", "addToCart()")
+    btn.setAttribute("onclick", "addToCart(this.closest('.container').querySelector('h5').innerHTML)")
     btn.innerHTML = "Thêm vào giỏ hàng"
     container.appendChild(btn)
-  
+
     card.appendChild(container);
     document.getElementById("products").appendChild(card);
 }
@@ -148,18 +148,24 @@ for (let item of products.data){
     localStorage.setItem("product", JSON.stringify(product))
 }
 
-const addToCart = (item) => {
+const addToCart = (productName) => {
     let productCart = JSON.parse(localStorage.getItem("productCart"));
+    for(let i = 0; i < products.data.length; i++){
+        if (products.data[i].name == productName) {
+            let item = products.data[i];
+            console.log(item);
+        }
+    }
     if(productCart == null){
         productCart = []
     }
-    const productItem = productCart.find((product) => product.id = item.id);
-    if(!productItem){
+    const productItem = productCart.find((product) => product.name = productName);
+    if(productItem == true){
         item.quantity = 1;
-        productCart.push(item);
+        productCart.push(item)
     }
     else{
-        productItem.quantity += 1;
+        item.quantity += 1
     }
     localStorage.setItem("productCart", JSON.stringify(productCart))
 }
